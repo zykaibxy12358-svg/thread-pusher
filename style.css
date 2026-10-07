@@ -1,0 +1,106 @@
+.thread-pusher-settings .tp-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0;
+}
+
+.thread-pusher-settings .tp-row > span {
+    flex: 0 0 46%;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.thread-pusher-settings .tp-row input[type="number"] {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.thread-pusher-settings .tp-status {
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 0.8em;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 6px;
+    margin-bottom: 8px;
+}
+
+.thread-pusher-settings .tp-list {
+    margin: 8px 0;
+}
+
+.thread-pusher-settings .tp-item {
+    border-left: 3px solid rgba(140, 180, 255, 0.55);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 4px;
+    padding: 5px 6px;
+    margin: 4px 0;
+    font-size: 0.82em;
+    line-height: 1.4;
+}
+
+.thread-pusher-settings .tp-item button {
+    margin: 3px 4px 0 0;
+    font-size: 0.9em;
+}
+
+.thread-pusher-settings .tp-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0;
+}
+
+.thread-pusher-settings .tp-hint {
+    font-size: 0.8em;
+    opacity: 0.75;
+    margin: 4px 0 8px;
+}
+
+.thread-pusher-settings .tp-warn {
+    color: #d9a24a;
+    font-size: 0.8em;
+    margin-top: 4px;
+}
+
+.thread-pusher-settings #tp-json {
+    width: 100%;
+    font-family: monospace;
+    font-size: 0.78em;
+    margin-bottom: 6px;
+}
+
+/* 兜底浮动面板（宿主没有扩展设置容器时） */
+#tp-fab {
+    position: fixed;
+    left: 10px;
+    bottom: 40px;
+    z-index: 4000;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: rgba(30, 30, 34, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #eee;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#tp-float-host {
+    display: none;
+    position: fixed;
+    left: 10px;
+    bottom: 74px;
+    width: 340px;
+    max-height: 70vh;
+    overflow: auto;
+    z-index: 3999;
+    background: rgba(24, 24, 28, 0.97);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#tp-float-host.tp-open {
+    display: block;
+}

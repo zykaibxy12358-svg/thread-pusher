@@ -1,0 +1,12 @@
+{
+    "display_name": "多线推进 ThreadPusher（用户不推，剧情自己走）",
+    "loading_order": 110,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "JINSHAN",
+    "version": "1.0.0",
+    "homePage": "",
+    "auto_update": false
+}
